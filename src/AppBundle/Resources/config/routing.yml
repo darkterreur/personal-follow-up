@@ -1,0 +1,21 @@
+mesure_add:
+    path: /mesure/add
+    defaults:
+        _controller: AppBundle:Mesure:addMesure
+
+mesure_edit:
+    path: /mesure/edit/{id}
+    defaults:
+        _controller: AppBundle:Mesure:editMesure
+    requirements:
+        id: '\d+'
+
+mesure_add:
+    path: /mesure/delete/{id}
+    defaults:
+        _controller: AppBundle:Mesure:deleteMesure
+    requirements:
+        id: '\d+'
+
+
+
